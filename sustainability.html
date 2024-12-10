@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        SERVING UP SUSTAINABILITY
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order_now.html">Order Now</a></li>
+            <li><a href="delivery_process.html">Delivery Process</a></li>
+            <li><a href="preparation_meals.html">Preparation & Meals</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <img src="sustainability1.jpg" alt="Image 1">
+            <p>Info about sustainability aspect 1.</p>
+        </div>
+        <div class="section">
+            <img src="sustainability2.jpg" alt="Image 2">
+            <p>Info about sustainability aspect 2.</p>
+        </div>
+    </div>
+    <div class="call-to-action">
+        YOU CAN HELP TOO!
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Restaurant. All rights reserved.</p>
+    </footer>
+    
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="subtotal"></p>
+            <p id="tax"></p>
+            <p id="total"></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

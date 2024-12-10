@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Process Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        DELIVERY PROCESS PAGE
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order_now.html">Order Now</a></li>
+            <li><a href="delivery_process.html">Delivery Process</a></li>
+            <li><a href="preparation_meals.html">Preparation & Meals</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="circle-container">
+        <div class="circle-item">
+            <p>Harvesting</p>
+            <img src="harvesting.jpg" alt="Harvesting" style="width: 100%; border-radius: 50%;">
+            <div class="arrow"></div>
+        </div>
+        <div class="circle-item">
+            <p>Planting</p>
+            <img src="planting.jpg" alt="Planting" style="width: 100%; border-radius: 50%;">
+            <div class="arrow"></div>
+        </div>
+        <div class="circle-item">
+            <p>Transportation Centers</p>
+            <img src="transportation.jpg" alt="Transportation Centers" style="width: 100%; border-radius: 50%;">
+            <div class="arrow"></div>
+        </div>
+        <div class="circle-item">
+            <p>Restaurant Deliveries</p>
+            <img src="restaurant_deliveries.jpg" alt="Restaurant Deliveries" style="width: 100%; border-radius: 50%;">
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Restaurant. All rights reserved.</p>
+    </footer>
+    
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="subtotal"></p>
+            <p id="tax"></p>
+            <p id="total"></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

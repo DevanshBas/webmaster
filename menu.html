@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Friendly Eats Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        EARTH-FRIENDLY EATS
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order_now.html">Order Now</a></li>
+            <li><a href="delivery_process.html">Delivery Process</a></li>
+            <li><a href="preparation_meals.html">Preparation & Meals</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <img src="dish1.jpg" alt="Dish 1">
+            <div class="dish-info">
+                <h3>Dish Name 1</h3>
+                <p>Description of dish 1.</p>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Dish 1', 10)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="section">
+            <img src="dish2.jpg" alt="Dish 2">
+            <div class="dish-info">
+                <h3>Dish Name 2</h3>
+                <p>Description of dish 2.</p>
+                <p>Price: $12</p>
+                <button onclick="addToCart('Dish 2', 12)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="section">
+            <img src="dish3.jpg" alt="Dish 3">
+            <div class="dish-info">
+                <h3>Dish Name 3</h3>
+                <p>Description of dish 3.</p>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Dish 3', 15)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Restaurant. All rights reserved.</p>
+    </footer>
+    
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="subtotal"></p>
+            <p id="tax"></p>
+            <p id="total"></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
